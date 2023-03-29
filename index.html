@@ -9,9 +9,13 @@
     <script type="text/javascript">
         var url = window.location.href;
         var obj = document.getElementById("msg");
+        var host = window.location.hostname;
+        var prot = window.location.protocol;
         var msg = ""
         msg+="<h4>";
-        msg+= url;
+        msg+= url + "br/>";
+        msg+= host + "br/>";
+        msg+= prot + "br/>";
         msg+="</h4>";
         obj.innerHTML = msg;
         alert("Path is: " + url + "\n" + "in branch mastercopy");
